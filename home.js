@@ -11,12 +11,7 @@ for (let icon of heart_icon) {
     heart_count.innerText = current + 1;
 
     icon.classList.remove("fa-regular");
-    icon.classList.add("fa-solid", "text-red-800");
-
-    setTimeout(() => {
-      icon.classList.remove("fa-solid", "text-red-800");
-      icon.classList.add("fa-regular");
-    }, 200);
+    icon.classList.add("fa-regular");
   });
 }
 
@@ -66,3 +61,25 @@ for (let btn of call_btn) {
 document.getElementById("clear-btn").addEventListener("click", function () {
   call_history.innerHTML = "";
 });
+
+// copy button
+
+let copy_count = document.getElementById("copy-count");
+let counts = parseInt(copy_count.innerText);
+
+let copy_btns = document.getElementsByClassName("copy-btn");
+
+for (let btn of copy_btns) {
+  btn.addEventListener("click", function () {
+    let card = btn.closest(".card");
+
+    let number = card.querySelector("span.font-bold").innerText;
+
+    navigator.clipboard.writeText(number);
+
+    alert("Number Copied!" + " " + number);
+
+    counts++;
+    copy_count.innerText = counts;
+  });
+}

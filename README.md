@@ -4,9 +4,9 @@ Event Bubbling means when an event happens on an element, it first runs the even
 
 Example: If you click a <button> inside a <div> inside <body>:
 
-First: button handler runs. 
-Then: div handler runs.  
-Finally: body handler runs
+First: button handler runs.<br>
+Then: div handler runs.<br>
+Finally: body handler runs.<br>
 
 
 

@@ -1,3 +1,21 @@
+## 2. How to create and insert a new element into the DOM <br>
+
+Steps:<br>
+Create element → document.createElement()<br>
+Set content/attributes → innerText, className.<br>
+Insert into DOM → appendChild(), append(), prepend(), insertBefore()<br>
+
+code:<br>
+let Div = document.createElement("div");<br>
+Div.innerText = "Hello, I am new here!";<br>
+Div.className = "new-box";<br>
+// Insert at the end of body<br>
+document.body.appendChild(newDiv);<br>
+
+
+
+
+
 ## 3. What is Event Bubbling and how does it work?
 
 Event Bubbling means when an event happens on an element, it first runs the event on that element, then “bubbles up” to its parent, then grandparent, and so on until document.

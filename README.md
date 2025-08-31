@@ -11,7 +11,7 @@
 
  stopPropagation() :
 
- Stops the event bubbling (or capturing) so it doesn’t move to parent elements.
+ Stops the event from bubbling up to parent elements.
 
  code:
  document.querySelector("button").addEventListener("click", function(e) {

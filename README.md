@@ -41,25 +41,23 @@ document.getElementById("list").addEventListener("click", function(e) {<br>
 
 
 
-5. Difference between preventDefault() and stopPropagation()
+## 5. Difference between preventDefault() and stopPropagation()
 
- preventDefault() : 
-
+ preventDefault():<br>
  Stops the default browser action.
 
- code:
- document.querySelector("form").addEventListener("submit", function(e) {
-  e.preventDefault(); 
- });
+ code:<br>
+ document.querySelector("form").addEventListener("submit", function(e) {<br>
+  e.preventDefault(); <br>
+ });<br>
 
- stopPropagation() :
-
+ stopPropagation() :<br>
  Stops the event from bubbling up to parent elements.
 
- code:
- document.querySelector("button").addEventListener("click", function(e) {
-  e.stopPropagation(); 
- });
+ code:<br>
+ document.querySelector("button").addEventListener("click", function(e) {<br>
+  e.stopPropagation(); <br>
+ });<br>
 
- preventDefault() → prevents default browser behavior.
- stopPropagation() → prevents event from traveling up the DOM.
+ preventDefault() → prevents default browser behavior.<br>
+ stopPropagation() → prevents event from traveling up the DOM.<br>

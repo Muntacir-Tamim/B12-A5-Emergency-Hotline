@@ -1,3 +1,29 @@
+## 1. Difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll <br>
+
+getElementById("id")<br>
+Selects one element by its unique id.<br>
+let item = document.getElementById("header");<br>
+
+
+getElementsByClassName("class")<br>
+Selects all elements with the given class name.<br>
+let items = document.getElementsByClassName("menu-item");<br>
+
+
+querySelector("selector")<br>
+Selects the first element matching a CSS selector.<br>
+let firstLink = document.querySelector(".menu a");<br>
+
+
+querySelectorAll("selector")<br>
+Selects all elements matching a CSS selector.<br>
+let allLinks = document.querySelectorAll(".menu a");<br>
+
+
+
+
+
+
 ## 2. How to create and insert a new element into the DOM <br>
 
 Steps:<br>

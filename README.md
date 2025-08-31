@@ -11,28 +11,28 @@ Finally: body handler runs.<br>
 
 
 
-4. What is Event Delegation? Why is it useful?
+## 4. What is Event Delegation? Why is it useful?
 
 Definition: 
 Event delegation is a technique where we attach an event listener to a parent element instead of multiple child elements, and then use event.target to detect which child triggered the event.
 
 Why useful?
-Better performance (fewer event listeners).
+Better performance (fewer event listeners).<br>
 Handles dynamically added elements automatically.
 
-<ul id="menu">
-  <li>Home</li>
-  <li>About</li>
-  <li>Contact</li>
-</ul>
+<ul id="menu"><br>
+  <li>Home</li><br>
+  <li>About</li><br>
+  <li>Contact</li><br>
+</ul><br>
 
 
 
-document.getElementById("list").addEventListener("click", function(e) {
-  if (e.target.tagName === "LI") {
-    alert(" clicked: " + e.target.innerText);
-  }
-});
+document.getElementById("list").addEventListener("click", function(e) {<br>
+  if (e.target.tagName === "LI") {<br>
+    alert(" clicked: " + e.target.innerText);<br>
+  }<br>
+});<br>
 
 
 

@@ -1,11 +1,11 @@
-# 3. What is Event Bubbling and how does it work?
+## 3. What is Event Bubbling and how does it work?
 
 Event Bubbling means when an event happens on an element, it first runs the event on that element, then “bubbles up” to its parent, then grandparent, and so on until document.
 
 Example: If you click a <button> inside a <div> inside <body>:
 
 First: button handler runs. 
-Then: div handler runs.   
+Then: div handler runs.  
 Finally: body handler runs
 
 
